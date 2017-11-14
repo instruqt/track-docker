@@ -1,0 +1,12 @@
+slug: docker-container-lifecycle
+icon: https://cdn.instruqt.com/tracks/default.png
+title: 'Docker - Container Lifecycle'
+teaser: A short description of the track.
+description: |-
+  A long description of the track.
+
+  You can use any GitHub flavoured markdown.
+tags: []
+challenges: []
+developers:
+- alindeboom@xebia.com
