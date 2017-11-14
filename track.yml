@@ -1,12 +1,14 @@
 slug: docker-container-lifecycle
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/docker.png
 title: 'Docker - Container Lifecycle'
-teaser: A short description of the track.
+teaser: Docker 101
 description: |-
-  A long description of the track.
+  This track will teach you a number of basic operations that you will need to start using Docker.
 
-  You can use any GitHub flavoured markdown.
-tags: []
+  When you have finished this track, you will be able to start and stop containers, interact with running containers and learn some other neat tricks.
+
+  Check out the challenges if you want of know more. Or, if you're feeling adventurous, just jump in!
+tags: [ "docker", "containers" ]
 challenges: []
 developers:
 - alindeboom@xebia.com
