@@ -1,6 +1,6 @@
 slug: docker-container-lifecycle
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/docker.png
-title: 'Docker - Container Lifecycle'
+title: Docker - Container Lifecycle
 teaser: Docker 101
 description: |-
   This track will teach you a number of basic operations that you will need to start using Docker.
@@ -8,7 +8,36 @@ description: |-
   When you have finished this track, you will be able to start and stop containers, interact with running containers and learn some other neat tricks.
 
   Check out the challenges if you want of know more. Or, if you're feeling adventurous, just jump in!
-tags: [ "docker", "containers" ]
-challenges: []
+tags:
+- docker
+- containers
+challenges:
+- slug: hello-world
+  credits: 10
+  title: Hello world!
+  teaser: Your first Docker container.
+  notes:
+  - type: text
+    title: Docker 101
+    contents: |-
+      The contents of the note.
+
+      You can use any GitHub flavoured markdown.
+  assignment: |-
+    Run the docker hello world image.
+
+    ## Hints
+    See [https://hub.docker.com/_/hello-world/](https://hub.docker.com/_/hello-world/)
+  difficulty: basic
+  timelimit: 300
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 80
+    external: []
 developers:
 - alindeboom@xebia.com
