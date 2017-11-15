@@ -122,5 +122,35 @@ challenges:
       name: shell
       port: 80
     external: []
+- slug: killing-containers
+  credits: 10
+  title: Killing containers
+  teaser: A short description of the challenge.
+  notes:
+  - type: text
+    title: Killing containers
+    contents: |-
+      The contents of the note.
+
+      You can use any GitHub flavoured markdown.
+  assignment: |-
+    Remember that we told you not to get too attached to Oscar? The reason for that is that you're going to have to kill it. Sorry, but we did warn you.
+
+    While you're at it, also stop `hammertime`.
+
+    ## Hints
+    - Use `docker ps` to list all running containers and note their names
+    - Check the docs for [docker kill](https://docs.docker.com/engine/reference/commandline/kill/) and [docker stop](https://docs.docker.com/engine/reference/commandline/stop/)
+  difficulty: basic
+  timelimit: 300
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 80
+    external: []
 developers:
 - alindeboom@xebia.com

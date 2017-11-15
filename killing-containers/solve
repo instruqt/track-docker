@@ -1,0 +1,3 @@
+#!/bin/bash
+docker kill oscar
+docker stop hammertime
