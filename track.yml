@@ -145,6 +145,33 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
+  unlocks:
+  - reviving-containers
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 80
+    external: []
+- slug: reviving-containers
+  credits: 10
+  title: Reviving containers
+  teaser: A short description of the challenge.
+  notes:
+  - type: text
+    title: Reviving containers
+    contents: |-
+      The contents of the note.
+
+      You can use any GitHub flavoured markdown.
+  assignment: |-
+    The assignment the participant needs to complete in order to proceed.
+
+    You can use any GitHub flavoured markdown.
+  difficulty: basic
+  timelimit: 900
+  points: 50
   unlocks: []
   tabs:
     internal:
