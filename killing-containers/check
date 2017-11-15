@@ -1,7 +1,6 @@
 #!/bin/bash
-# Check that an Alpine container named 'oscar' is present with status exited
+# Check that Alpine container named 'oscar' and 'hammertime' are present with status exited
 CONTAINER_NAMES=( "oscar" "hammertime" )
-
 for CONTAINER in "${CONTAINER_NAMES[@]}"; do
   CONTAINER_ID=$(docker ps -aq --filter status=exited --filter ancestor=alpine --filter name=$CONTAINER)
   if [[ -z $CONTAINER_ID ]]; then

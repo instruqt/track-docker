@@ -1,1 +1,3 @@
 #!/bin/bash
+docker run -itd --name=oscar alpine:latest && docker kill oscar
+docker run -itd --name=hammertime alpine:latest && docker stop hammertime
