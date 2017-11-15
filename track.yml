@@ -71,7 +71,7 @@ challenges:
 - slug: moving-into-the-background
   credits: 10
   title: Moving into the background
-  teaser: A short description of the challenge.
+  teaser: Let your containers roam freely.
   notes:
   - type: text
     title: Moving into the background
@@ -100,8 +100,14 @@ challenges:
 - slug: naming-containers
   credits: 10
   title: Naming your containers
-  teaser: A short description of the challenge.
-  notes: []
+  teaser: Give names to your favorite containers.
+  notes:
+  - type: text
+    title: Naming your containers
+    contents: |-
+      The contents of the note.
+
+      You can use any GitHub flavoured markdown.
   assignment: |-
     Run the Alpine image in interactive or daemon mode and name it `oscar`.
 
@@ -126,7 +132,7 @@ challenges:
 - slug: killing-containers
   credits: 10
   title: Killing containers
-  teaser: A short description of the challenge.
+  teaser: Sometimes you got to let them go...
   notes:
   - type: text
     title: Killing containers
@@ -157,7 +163,7 @@ challenges:
 - slug: reviving-containers
   credits: 10
   title: Reviving containers
-  teaser: A short description of the challenge.
+  teaser: Bring your containers back from the dead.
   notes:
   - type: text
     title: Reviving containers
@@ -170,7 +176,7 @@ challenges:
 
     You can use any GitHub flavoured markdown.
   difficulty: basic
-  timelimit: 900
+  timelimit: 300
   points: 50
   unlocks: []
   tabs:
