@@ -1,1 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash -s
+# Check that an alpine container is currently running.
+CONTAINER_ID=$(docker ps -aq --filter ancestor=alpine --filter status=running --filter name=background)
+if [[ -z $CONTAINER_ID ]]; then
+  echo "DIAG: There is no Alpine container named background currently running"
+  exit 1
+fi
+
+BACKGROUND=$(docker inspect $CONTAINER_ID --format '{{json .Config}}' | jq '. | select(.AttachStdout == false and .AttachStderr == false)')
+if [[ -z $BACKGROUND ]]; then
+  echo "DIAG: The container is not running in daemon mode"
+  exit 1
+fi
+
+exit 0
