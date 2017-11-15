@@ -88,7 +88,8 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks: []
+  unlocks:
+  - naming-containers
   tabs:
     internal:
     - type: terminal
