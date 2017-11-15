@@ -96,5 +96,30 @@ challenges:
       name: shell
       port: 80
     external: []
+- slug: naming-containers
+  credits: 10
+  title: Naming your containers
+  teaser: A short description of the challenge.
+  notes: []
+  assignment: |-
+    Run the Alpine image in interactive or daemon mode and name it `oscar`.
+
+    If you're running it in daemon mode, take a look at how it is displayed.
+
+    ## Hints
+    - See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
+    - Use `docker ps` to list all running containers
+    - Be sure not to get too attached to Oscar. You'll see why.
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 80
+    external: []
 developers:
 - alindeboom@xebia.com

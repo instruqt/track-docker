@@ -1,0 +1,12 @@
+#!/usr/bin/env bash -s
+EXPECTED_CONTAINER_NAME=oscar
+
+# Check that an Alpine container named 'oscar' is currently running.
+CONTAINER_ID=$(docker ps -aq --filter --filter status=running --filter ancestor=alpine --filter name=$EXPECTED_CONTAINER_NAME)
+
+if [[ -z $CONTAINER_ID ]]; then
+  echo "DIAG: There is no Alpine container named '${EXPECTED_CONTAINER_NAME}' currently running"
+  exit 1
+fi
+
+exit 0
