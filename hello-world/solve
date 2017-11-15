@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker run hello-world
+docker run hello-world:latest
