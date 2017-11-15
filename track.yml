@@ -31,7 +31,8 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks: []
+  unlocks:
+    - getting-interactive
   tabs:
     internal:
     - type: terminal
