@@ -32,7 +32,7 @@ challenges:
   timelimit: 300
   points: 50
   unlocks:
-    - getting-interactive
+  - getting-interactive
   tabs:
     internal:
     - type: terminal
@@ -53,6 +53,34 @@ challenges:
       You can use any GitHub flavoured markdown.
   assignment: |-
     Run the container from the image 'alpine' in interactive mode and take a look around.
+
+    ## Hints
+    See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
+  difficulty: basic
+  timelimit: 300
+  points: 50
+  unlocks:
+  - moving-into-the-background
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 80
+    external: []
+- slug: moving-into-the-background
+  credits: 10
+  title: Moving into the background
+  teaser: A short description of the challenge.
+  notes:
+  - type: text
+    title: Moving into the background
+    contents: |-
+      The contents of the note.
+
+      You can use any GitHub flavoured markdown.
+  assignment: |-
+    Run a container from the image 'alpine' in daemon mode and name the container 'background'.
 
     ## Hints
     See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
