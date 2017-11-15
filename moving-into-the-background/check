@@ -1,8 +1,8 @@
 #!/usr/bin/env bash -s
 # Check that an alpine container is currently running.
-CONTAINER_ID=$(docker ps -aq --filter ancestor=alpine --filter status=running --filter name=background)
+CONTAINER_ID=$(docker ps -aq --filter ancestor=alpine --filter status=running)
 if [[ -z $CONTAINER_ID ]]; then
-  echo "DIAG: There is no Alpine container named background currently running"
+  echo "DIAG: There is no Alpine container currently running"
   exit 1
 fi
 
