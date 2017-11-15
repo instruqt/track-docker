@@ -109,9 +109,9 @@ challenges:
     ## Hints
     - See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
     - Use `docker ps` to list all running containers
-    - Be sure not to get too attached to Oscar. You'll see why.
+    - Be sure not to get too attached to Oscar. You'll see why...
   difficulty: basic
-  timelimit: 900
+  timelimit: 300
   points: 50
   unlocks: []
   tabs:
