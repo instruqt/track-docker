@@ -1,0 +1,23 @@
+#!/usr/bin/env bash -s
+# Check that the Alpine container is currently running.
+ALPINE_ID=$(docker ps -aq --filter ancestor=alpine --filter status=running)
+if [[ -z $ALPINE_ID ]]; then
+  echo "DIAG: There is no Alpine container currently running"
+  exit 1
+fi
+
+# Check that the container is running with tty.
+TTY=$(docker inspect $ALPINE_ID --format '{{json .Config.Tty}}')
+if [[ $TTY == false ]]; then
+  echo "DIAG: The container is not running with a tty"
+  exit 1
+fi
+
+# Check that the container is running interactively.
+INTERACTIVE=$(docker inspect $ALPINE_ID --format '{{json .Config.AttachStdin}}')
+if [[ $INTERACTIVE == false ]]; then
+  echo "DIAG: The container is not running interactively"
+  exit 1
+fi
+
+exit 0

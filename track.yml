@@ -39,5 +39,32 @@ challenges:
       name: shell
       port: 80
     external: []
+- slug: getting-interactive
+  credits: 10
+  title: Getting interactive
+  teaser: Take a look inside your container.
+  notes:
+  - type: text
+    title: Getting interactive
+    contents: |-
+      The contents of the note.
+
+      You can use any GitHub flavoured markdown.
+  assignment: |-
+    Run the container from the image 'alpine' in interactive mode and take a look around.
+
+    ## Hints
+    See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
+  difficulty: basic
+  timelimit: 300
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 80
+    external: []
 developers:
 - alindeboom@xebia.com

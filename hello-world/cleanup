@@ -1,4 +1,4 @@
 #!/usr/bin/env bash -s
 # Remove all containers and the hello-world image
 docker rm -f $(docker ps -aq)
-docker rmi -f hello-world
+docker rmi -f $(docker images -q)
