@@ -143,7 +143,7 @@ challenges:
   assignment: |-
     Remember that we told you not to get too attached to Oscar? The reason for that is that you're going to have to kill it. Sorry, but we did warn you.
 
-    While you're at it, also stop `hammertime`.
+    While you're at it, also stop. `Hammertime`.
 
     ## Hints
     - Use `docker ps` to list all running containers and note their names
