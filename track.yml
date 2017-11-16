@@ -24,7 +24,7 @@ challenges:
 
       You can use any GitHub flavoured markdown.
   assignment: |-
-    Run the docker hello world image.
+    Run the Docker hello world image.
 
     ## Hints
     See [https://hub.docker.com/_/hello-world/](https://hub.docker.com/_/hello-world/)
