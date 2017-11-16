@@ -1,0 +1,9 @@
+#!/bin/bash
+# Check that no containers are present
+CONTAINER_IDS=$(docker ps -aq)
+if [[ ! -z $CONTAINER_ID ]]; then
+  echo "DIAG: There are still containers present, be sure to delete all of them."
+  exit 1
+fi
+
+exit 0

@@ -172,9 +172,42 @@ challenges:
 
       You can use any GitHub flavoured markdown.
   assignment: |-
-    Ofcourse we would never make you kill Oscar if we didn't have a backup plan. You can revive killed or stopped containers, so let's get him back on his feet!
+    Ofcourse we would never make you kill Oscar if we didn't have a backup plan. You can revive killed or stopped containers, so let's get him back on his feet.
 
     Hammertime can stay dead though.
+
+    ## Hints
+    - Use `docker ps -a` to list all containers, including exited ones
+    - Check the [docs for the docker cli](https://docs.docker.com/engine/reference/commandline/docker)
+  difficulty: basic
+  timelimit: 300
+  points: 50
+  unlocks:
+  - cleaning-up
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 8080
+    external: []
+- slug: cleaning-up
+  credits: 10
+  title: Cleaning up
+  teaser: Party's over, let's clean up after ourselves.
+  notes:
+  - type: text
+    title: Cleaning up
+    contents: |-
+      The contents of the note.
+
+      You can use any GitHub flavoured markdown.
+  assignment: |-
+    Our `hammertime` container is still lying around, but we don't want to see it again. Remove it from the premises.
+
+    ## Hints
+    - Use `docker ps -a` to list all containers, including exited ones
+    - Check the [docs for the docker cli](https://docs.docker.com/engine/reference/commandline/docker)
   difficulty: basic
   timelimit: 300
   points: 50
