@@ -80,7 +80,7 @@ challenges:
 
       You can use any GitHub flavoured markdown.
   assignment: |-
-    Run a container from the image 'alpine' in daemon mode and verify if it is running.
+    Run a container from the image 'alpine' in daemon mode and verify that it is running.
 
     ## Hints
     - See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
