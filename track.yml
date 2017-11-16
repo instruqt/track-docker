@@ -38,7 +38,7 @@ challenges:
     - type: terminal
       title: Shell
       name: shell
-      port: 80
+      port: 8080
     external: []
 - slug: getting-interactive
   credits: 10
@@ -66,7 +66,7 @@ challenges:
     - type: terminal
       title: Shell
       name: shell
-      port: 80
+      port: 8080
     external: []
 - slug: moving-into-the-background
   credits: 10
@@ -95,7 +95,7 @@ challenges:
     - type: terminal
       title: Shell
       name: shell
-      port: 80
+      port: 8080
     external: []
 - slug: naming-containers
   credits: 10
@@ -127,7 +127,7 @@ challenges:
     - type: terminal
       title: Shell
       name: shell
-      port: 80
+      port: 8080
     external: []
 - slug: killing-containers
   credits: 10
@@ -158,7 +158,7 @@ challenges:
     - type: terminal
       title: Shell
       name: shell
-      port: 80
+      port: 8080
     external: []
 - slug: reviving-containers
   credits: 10
@@ -184,7 +184,7 @@ challenges:
     - type: terminal
       title: Shell
       name: shell
-      port: 80
+      port: 8080
     external: []
 developers:
 - alindeboom@xebia.com
