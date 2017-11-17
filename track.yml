@@ -13,7 +13,7 @@ description: |-
   It is possible to run multiple processes in a container. But because containers are so small, and they can talk to each other, we generally try to keep the number of processes in a container as close to 1 as possible. So, for example, if you have an application and a database, you wouldn't run them in one container, but in two.
   ![Docker Basics visualization](https://storage.googleapis.com/instruqt-frontend/img/tracks/content/docker-basics.png)
 
-  Want to play with Docker? Great, we've got you covered! Check out the challenges to the right and jump right in when you're ready.
+  Ready for action? Great, you can check out the challenges to the right and jump right in when you're ready.
 tags:
 - docker
 - containers
