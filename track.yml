@@ -18,13 +18,15 @@ challenges:
   teaser: Your first Docker container.
   notes:
   - type: text
-    title: Docker 101
+    title: Running containers
     contents: |-
       The contents of the note.
 
       You can use any GitHub flavoured markdown.
   assignment: |-
-    Alrighty! With all that incredibly interesting theory out of the way, it's time to run your first container. Docker kindly provides you with an image that's just perfect for this, it's called `hello-world`. Try to run it and see what happens.
+    Alrighty! With all that incredibly interesting theory out of the way, it's time to run your first container. Docker kindly provides you with an image that's just perfect for this, it's called `hello-world`.
+
+    Try to run it and see what happens.
 
     ## Hints
     - Click the 'Check' button to have our robot hamsters check whether you've done it right
