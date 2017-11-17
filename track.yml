@@ -3,11 +3,17 @@ icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/docker.png
 title: Docker - Container Lifecycle
 teaser: Your first steps into the magical Docker Wonderland
 description: |-
-  This track will teach you a number of basic operations that you will need to start using Docker.
+  This track will teach you what Docker is, and get you started with a number of basic operations that you will need to start using it.
 
-  When you have finished this track, you will be able to start and stop containers, interact with running containers and learn some other neat tricks.
+  When you have finished this track, you will be able to start and stop containers, interact with running containers and learn some other neat tricks. But first, some background information that will come in handy.
 
-  Check out the challenges if you want to know more. Or, if you're feeling adventurous, just jump in!
+  ## What is Docker?
+  Docker lets you run programs in containers that are isolated from other programs that run on the same machine. It does this in a way that all containers on a machine can share the OS and kernel of that machine. This means that the footprint of a container is much smaller than that of a virtual machine, and that it can start much faster. After all, the host OS is already running, and it also only has to run once.
+
+  It is possible to run multiple processes in a container. But because containers are so small, and they can talk to each other, we generally try to keep the number of processes in a container as close to 1 as possible. So, for example, if you have an application and a database, you wouldn't run them in one container, but in two.
+  ![Docker Basics visualization](https://storage.googleapis.com/instruqt-frontend/img/tracks/content/docker-basics.png)
+
+  Want to play with Docker? Great, we've got you covered! Check out the challenges to the right and jump right in when you're ready.
 tags:
 - docker
 - containers
@@ -20,16 +26,13 @@ challenges:
   - type: text
     title: Introduction to Docker
     contents: |-
-      While we're waiting for the infrastructure to spin up, let's make good use of our time and learn some things about Docker that will come in handy. Check out the topics to the left and go learn!
+      While we're waiting for the infrastructure to spin up, let's make good use of our time and learn some things about using docker that will come in handy. Check out the topics to the left and go learn!
 
       When you're ready to go, click the big honkin' button below to start the challenge and the timer.
   - type: text
-    title: What is Docker?
+    title: Running containers
     contents: |-
-      Docker lets you run programs in containers that are isolated from other programs that run on the same machine. It does this in a way that all containers on a machine can share the OS and kernel of that machine. This means that the footprint of a container is much smaller than that of a virtual machine, and that it can start much faster. After all, the host OS is already running, and it also only has to run once.
-
-      It is possible to run multiple processes in a container. But because containers are so small, and they can talk to each other, we generally try to keep the number of processes in a container as close to 1 as possible. So, for example, if you have an application and a database, you wouldn't run them in one container, but in two.
-      ![Docker Basics visualization](https://storage.googleapis.com/instruqt-frontend/img/tracks/content/docker-basics.png)
+      Docker run, fool.
   assignment: |-
     Alrighty! With all that incredibly interesting theory out of the way, it's time to run our first container. Docker kindly provides you with an image that's just perfect for this, it's called `hello-world`.
 
