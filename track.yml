@@ -12,7 +12,7 @@ description: |-
   ![Docker Basics visualization](https://storage.googleapis.com/instruqt-frontend/img/tracks/content/docker-basics.png)
 
   ## The Docker CLI
-  The most straightforward way to interact with Docker is through its command-line interface (CLI). It allows you to do all kinds of things with containers, like running, stopping and inspecting them. The CLI can be run using the `docker` command and has an extensive help system built in, which can be invoked by sticking `--help` or `COMMAND --help` to it. (try running `docker run --help` to check out what superpowers are available to you)
+  The most straightforward way to interact with Docker is through its command-line interface (CLI). It allows you to do all kinds of things with containers, like starting, stopping and inspecting them. The CLI can be run using the `docker` command and has an extensive help system built in, which can be invoked by sticking `--help` or `COMMAND --help` to it. (try running `docker run --help` to check out what superpowers are available to you)
 
   ## Ready for action?
   Great, check out the challenges to the right and jump right in!
