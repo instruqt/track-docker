@@ -24,15 +24,8 @@ challenges:
   teaser: Your first Docker container.
   notes:
   - type: text
-    title: Introduction to Docker
-    contents: |-
-      While we're waiting for the infrastructure to spin up, let's make good use of our time and learn some things about using docker that will come in handy. Check out the topics to the left and go learn!
-
-      When you're ready to go, click the big honkin' button below to start the challenge and the timer.
-  - type: text
     title: Running containers
-    contents: |-
-      Docker run, fool.
+    contents: It's basically like a mini-VM, but different.
   assignment: |-
     Alrighty! With all that incredibly interesting theory out of the way, it's time to run our first container. Docker kindly provides you with an image that's just perfect for this, it's called `hello-world`.
 
