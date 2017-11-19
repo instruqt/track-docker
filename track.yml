@@ -8,12 +8,11 @@ description: |-
   When you have finished this track, you will be able to start and stop containers, interact with running containers and learn some other neat tricks.
 
   ## What is Docker?
-  Docker lets you run programs in containers that are isolated from other programs that run on the same machine. It does this in a way that all containers on a machine can share the OS and kernel of that machine. This means that the footprint of a container is much smaller than that of a virtual machine, and that it can start much faster. After all, the host OS is already running, and it also only has to run once.
-
-  It is possible to run multiple processes in a container. But because containers are so small, and they can talk to each other, we generally try to keep the number of processes in a container as close to 1 as possible. So, for example, if you have an application and a database, you wouldn't run them in one container, but in two separate ones.
+  Docker lets you run programs in containers that are isolated from other programs that run on the same machine. It does this in a way that all containers on a machine can share the OS and kernel of that machine. This means that the footprint of a container is much smaller than that of a virtual machine, and that it can start much faster. After all, the host OS is already running, and it only has to run once.
   ![Docker Basics visualization](https://storage.googleapis.com/instruqt-frontend/img/tracks/content/docker-basics.png)
 
-  Ready for action? Great, you can check out the challenges to the right and jump right in when you're ready.
+  ## The Docker CLI
+  The most straightforward way to interact with Docker is through its command-line interface (CLI). It allows you to do all kinds of things with containers, like running, stopping and inspecting them. The CLI can be run using the `docker` command and has an extensive help system built in, which can be invoked by sticking `--help` or `COMMAND --help` to it. (try running `docker run --help` to check out what superpowers are available to you)
 tags:
 - docker
 - containers
