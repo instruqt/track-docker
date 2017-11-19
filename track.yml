@@ -5,7 +5,7 @@ teaser: Your first steps into the magical Docker Wonderland
 description: |-
   This track will teach you what Docker is, and get you started with a number of basic operations that you will need to start using it.
 
-  When you have finished this track, you will be able to start and stop containers, interact with running containers and learn some other neat tricks. But first, some background information that will come in handy.
+  When you have finished this track, you will be able to start and stop containers, interact with running containers and learn some other neat tricks.
 
   ## What is Docker?
   Docker lets you run programs in containers that are isolated from other programs that run on the same machine. It does this in a way that all containers on a machine can share the OS and kernel of that machine. This means that the footprint of a container is much smaller than that of a virtual machine, and that it can start much faster. After all, the host OS is already running, and it also only has to run once.
