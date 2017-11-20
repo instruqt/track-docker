@@ -9,6 +9,7 @@ description: |-
 
   ## What is Docker?
   Docker lets you run programs in containers that are isolated from other programs that run on the same machine. It does this in a way that all containers on a machine can share the OS and kernel of that machine. This means that the footprint of a container is much smaller than that of a virtual machine, and that it can start much faster. After all, the host OS is already running, and it only has to run once.
+
   ![Docker Basics visualization](https://storage.googleapis.com/instruqt-frontend/img/tracks/content/docker-basics.png)
 
   ## The Docker CLI
@@ -38,7 +39,7 @@ challenges:
 
       Ofcourse that still leaves the question open what you need to create a container. The answer is an *image*. We will leave the details for later, the only thing you really need to remember is that to run a container, you need an image.
   - type: text
-    title: Diving into the deep
+    title: Diving into the deep end
     contents: |-
       That's all the theory you need to do the challenge. If you think you've got this, or if you are the adventurous type, click the 'Start challenge' button below.
 
