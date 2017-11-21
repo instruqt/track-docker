@@ -123,7 +123,7 @@ challenges:
     contents: |-
       Remember that the interactive flag keeps your container alive in certain cases? This is one of those cases where you need it. If you use the detach flag by itself, the container will die immediately.
 
-      So you'll need to combine the detach flag with the interactive flag. No fancy mnemonic here, just 'id' it.
+      So you'll need to combine the detach flag with the interactive flag. No fancy mnemonic here, just `id` it.
   assignment: |-
     Run a container from the image 'alpine' in detached mode and verify that it is running.
 
