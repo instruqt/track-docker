@@ -87,7 +87,7 @@ challenges:
 
       Together, the short versions of the flag form the word 'it'. So you can just tell Docker to `docker run -it` (remember the dash). As simple as that!
 
-      That's it, you should now be able to start a container now and interact with it.
+      That's it, you should now be able to start a container and interact with it.
   assignment: |-
     So far you have only seen a container run and exit immediately. Now it's time to inspect it a little closer.
 
