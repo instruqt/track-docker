@@ -186,17 +186,22 @@ challenges:
   - type: text
     title: Killing containers
     contents: |-
-      The contents of the note.
+      What if you want to get rid of those pesky detached containers? Docker has two ways to do this: `kill` and `stop`.
 
-      You can use any GitHub flavoured markdown.
+      Of these 2, `stop` is the more subtle one, but it doesn't make for a great headline, so we focus on `kill`. Just feed it a container name or id.
+  - type: text
+    title: Just stop it
+    contents: |-
+      `docker stop` basically does the same thing, but uses a different signal (SIGTERM instead of SIGKILL). So depending on how your applications handles those signals, you may want to use or the other.
   assignment: |-
-    Remember that we told you not to get too attached to Oscar? The reason for that is that you're going to have to kill it. Sorry, but we did warn you.
+    Remember that we told you not to get too attached to Oscar? The reason for that is that you're going to have to kill it.
 
-    While you're at it, also stop. `Hammertime`.
+    Sorry, but we did warn you.
+
+    While you're at it, also `stop crying`.
 
     ## Hints
-    - Use `docker ps` to list all running containers and note their names
-    - Check the docs for [docker kill](https://docs.docker.com/engine/reference/commandline/kill/) and [docker stop](https://docs.docker.com/engine/reference/commandline/stop/)
+    - Use `docker ps` to list all running containers and note their names and ids
   difficulty: basic
   timelimit: 300
   points: 50
