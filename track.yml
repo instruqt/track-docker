@@ -250,15 +250,14 @@ challenges:
   - type: text
     title: Cleaning up
     contents: |-
-      The contents of the note.
+      If a container has stopped, it will keep taking precious space on your Docker machine. It is however possible to remove it with the `rm` command.
 
-      You can use any GitHub flavoured markdown.
+      Note that this will only work with stopped containers, live ones will resist being removed from the premises. (Unless you use the `--force` ];])
   assignment: |-
-    Our `hammertime` container is still lying around, but we don't want to see it again. Remove it from the premises.
+    We have some `trash` lying around, let's clean it up.
 
     ## Hints
     - Use `docker ps -a` to list all containers, including exited ones
-    - Check the [docs for the docker cli](https://docs.docker.com/engine/reference/commandline/docker)
   difficulty: basic
   timelimit: 300
   points: 50
