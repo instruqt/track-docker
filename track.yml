@@ -85,7 +85,7 @@ challenges:
     contents: |-
       You've just learned about the interactive and the TTY flags. Let's learn us a mmnemonic!
 
-      Together, the short versions of the flag form the word 'it'. So you can just tell Docker to `docker run -it` (remember the dash). As simple as that!
+    Together, the short versions of the flag form the word 'it'. So you can just tell Docker to `run it` and add a dash: `docker run -it`. As simple as that!
 
       That's it, you should now be able to start a container and interact with it.
   assignment: |-
