@@ -68,15 +68,29 @@ challenges:
 - slug: getting-interactive
   credits: 10
   title: Getting interactive
-  teaser: Take a look inside your container.
+  teaser: Interacting with a container.
   notes:
   - type: text
-    title: Getting interactive
+    title: Ways to run a container
     contents: |-
-      The contents of the note.
+      If you've lazy like us, you used a plain `docker run` to complete the first assignment. However, there are multiple ways to run a container, and we're going to tell you about some of them now.
+  - type: text
+    title: Run flags
+    contents: |-
+      First of all, your first `docker run` command wasn't very interactive. We want to change that, but for that you need to know about the interactive flag (`-i` or `--interactive`), which attaches your container to your local shell.
 
-      You can use any GitHub flavoured markdown.
+      By itself, the interactive flag doesn't do much. This has to do with the fact that most command-line executables need something called a TTY to communicate with the outside world. Conveniently, Docker also has a flag for that: the TTY flag (`-t` or `-tty`).
+  - type: text
+    title: Putting it together
+    contents: |-
+      You've just learned about the interactive and the TTY flags. Let's learn us a mmnemonic!
+
+      Together, the short versions of the flag form the word 'it'. So you can just tell Docker to `docker run -it` (remember the dash). As simple as that!
+
+      That's it, you should now be able to start a container now and interact with it.
   assignment: |-
+    So far you have only seen a container run and exit immediately. Now it's time to inspect it a little closer.
+
     Run the container from the image 'alpine' in interactive mode and take a look around.
 
     ## Hints
