@@ -77,7 +77,7 @@ challenges:
   - type: text
     title: Run flags
     contents: |-
-      First of all, your first `docker run` command wasn't very interactive. We want to change that, but for that you need to know about the interactive flag (`-i` or `--interactive`), which attaches your container to your local shell.
+      First of all, your first `docker run` command wasn't very interactive. We want to change that, but for that you need to know about the interactive flag (`-i` or `--interactive`), which keeps your container alive in most cases that you care about.
 
       By itself, the interactive flag doesn't do much. This has to do with the fact that most command-line executables need something called a TTY to communicate with the outside world. Conveniently, Docker also has a flag for that: the TTY flag (`-t` or `-tty`).
   - type: text
@@ -94,7 +94,7 @@ challenges:
     Run the container from the image 'alpine' in interactive mode and take a look around.
 
     ## Hints
-    See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
+    - See the [Docker run reference](https://docs.docker.com/engine/reference/commandline/run/)
   difficulty: basic
   timelimit: 300
   points: 50
@@ -113,16 +113,22 @@ challenges:
   teaser: Let your containers roam freely.
   notes:
   - type: text
-    title: Moving into the background
+    title: Detach it
     contents: |-
-      The contents of the note.
+      So far you have only seen containers that wrote output to your shell. But it's entirely possible that someday you want to start a container and then go do something else.
 
-      You can use any GitHub flavoured markdown.
+      Docker has another flag for this: the detach flag (`-d` or `--detached`). It runs the container in the background and gives you back control over your shelackground and gives you back control over your shell.
+  - type: text
+    title: Interactive detachment
+    contents: |-
+      Remember that the interactive flag keeps your container alive in certain cases? This is one of those cases where you need it. If you use the detach flag by itself, the container will die immediately.
+
+      So you'll need to combine the detach flag with the interactive flag. No fancy mnemonic here, just 'id' it.
   assignment: |-
-    Run a container from the image 'alpine' in daemon mode and verify that it is running.
+    Run a container from the image 'alpine' in detached mode and verify that it is running.
 
     ## Hints
-    - See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
+    - See the [Docker run reference](https://docs.docker.com/engine/reference/commandline/run/)
     - Use `docker ps` to list all running containers
   difficulty: basic
   timelimit: 300
