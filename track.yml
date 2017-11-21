@@ -148,20 +148,24 @@ challenges:
   teaser: Give names to your favorite containers.
   notes:
   - type: text
-    title: Naming your containers
+    title: Container names
     contents: |-
-      The contents of the note.
+      If you have used `docker ps`, you may have noticed that containers always have names even when you don't explicitly name them.
 
-      You can use any GitHub flavoured markdown.
+      This is because Docker will make up a name for each container if you don't specify one. It does this by randomly grabbing an adjective (e.g. 'lazy') from a pool and attaching a scientist's name to it. It's really cute.
+  - type: text
+    title: Take control
+    contents: |-
+      Sometimes you want more control over your container names, for example if you are writing scripts. Docker lets you do this with the name flag (`--name`, no short version this time)
   assignment: |-
-    Run the Alpine image in interactive or daemon mode and name it `oscar`.
+    Run the Alpine image in detached mode and name it `oscar`.
 
-    If you're running it in daemon mode, take a look at how it is displayed.
+    Then list the running containers and take a look at how it is displayed.
 
     ## Hints
     - See the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/run/)
     - Use `docker ps` to list all running containers
-    - Be sure not to get too attached to Oscar. You'll see why...
+    - Be sure not to get too attached to Oscar. We won't tell you why.
   difficulty: basic
   timelimit: 300
   points: 50
