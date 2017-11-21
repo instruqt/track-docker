@@ -222,17 +222,14 @@ challenges:
   - type: text
     title: Reviving containers
     contents: |-
-      The contents of the note.
+      When your container has died for whatever reason (Somebody killed it? Why would anyone do that?) it is easy to bring it back to life with the `start` command.
 
-      You can use any GitHub flavoured markdown.
+      If the container is able to sustain itself, it will stay alive, too.
   assignment: |-
-    Ofcourse we would never make you kill Oscar if we didn't have a backup plan. You can revive killed or stopped containers, so let's get him back on his feet.
-
-    Hammertime can stay dead though.
+    Ofcourse we would never make you kill Oscar if we didn't have a backup plan. You can revive killed or stopped containers, so let's get Oscar back on his feet.
 
     ## Hints
     - Use `docker ps -a` to list all containers, including exited ones
-    - Check the [docs for the docker cli](https://docs.docker.com/engine/reference/commandline/docker)
   difficulty: basic
   timelimit: 300
   points: 50

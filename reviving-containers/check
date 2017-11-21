@@ -4,9 +4,4 @@ if [[ -z $(docker ps -aq --filter status=running --filter ancestor=alpine --filt
   exit 1
 fi
 
-if [[ ! -z $(docker ps -aq --filter status=running --filter ancestor=alpine --filter name=hammertime) ]]; then
-  echo "DIAG: Stop. Hammertime."
-  exit 1
-fi
-
 exit 0
