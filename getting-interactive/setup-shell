@@ -1,2 +1,4 @@
 #!/bin/bash
 docker pull alpine:latest
+
+exit 0

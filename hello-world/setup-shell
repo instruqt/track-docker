@@ -7,3 +7,5 @@ do
   sleep 1
 done
 docker pull hello-world:latest
+
+exit 0

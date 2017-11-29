@@ -1,3 +1,5 @@
-#!/usr/bin/env bash -s
+#!/bin/bash
 docker rm -f $(docker ps -aq)
 docker rmi -f $(docker images -q)
+
+exit 0
