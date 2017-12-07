@@ -269,5 +269,7 @@ challenges:
       name: shell
       port: 8080
     external: []
+status: live
 developers:
 - alindeboom@xebia.com
+- erik@instruqt.com
