@@ -3,8 +3,7 @@ configuration:
   Containers:
   - Image: gcr.io/instruqt/shell-docker:latest
     Name: shell
-    Ports:
-    - 8080
+    Ports: []
     Privileged: true
     Resources:
       Memory: 128
