@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -s
+#!/bin/bash
 # Check if the hello-world container was run.
 HELLO_ID=$(docker ps -aq --filter ancestor=hello-world --filter status=exited)
 if [[ -z $HELLO_ID ]]; then
