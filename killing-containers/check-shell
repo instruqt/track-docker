@@ -1,12 +1,16 @@
-#!/bin/bash
-# Check that Alpine container named 'oscar' and 'crying' are present with status exited
-CONTAINER_NAMES=( "oscar" "crying" )
-for CONTAINER in "${CONTAINER_NAMES[@]}"; do
-  CONTAINER_ID=$(docker ps -aq --filter status=exited --filter ancestor=alpine --filter name=$CONTAINER)
-  if [[ -z $CONTAINER_ID ]]; then
-    echo "DIAG: There is no Alpine container named '${CONTAINER}' with status 'exited'"
-    exit 1
-  fi
-done
+#!/bin/ash
+#
+CONTAINER_ID=$(docker ps -aq --filter status=exited --filter ancestor=alpine --filter name=oscar)
+if [[ -z $CONTAINER_ID ]]; then
+  echo "DIAG: There is no Alpine container named 'oscar' with status 'exited'"
+  exit 1
+fi
+
+CONTAINER_ID=$(docker ps -aq --filter status=exited --filter ancestor=alpine --filter name=crying)
+if [[ -z $CONTAINER_ID ]]; then
+  echo "DIAG: There is no Alpine container named 'crying' with status 'exited'"
+  exit 1
+fi
+
 
 exit 0

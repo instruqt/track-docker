@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ash
 docker pull alpine:latest
 
 exit 0

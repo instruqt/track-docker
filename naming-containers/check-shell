@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ash
 EXPECTED_CONTAINER_NAME=oscar
 
 # Check that an Alpine container named 'oscar' is currently running.
