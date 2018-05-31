@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 #
 CONTAINER_ID=$(docker ps -aq --filter status=exited --filter ancestor=alpine --filter name=oscar)
 if [[ -z $CONTAINER_ID ]]; then

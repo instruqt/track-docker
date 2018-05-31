@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 docker run -itd --name=oscar alpine:latest && docker kill oscar
 
 exit 0

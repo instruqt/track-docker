@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 docker run -itd --name=trash alpine:latest
 docker stop trash
 exit 0

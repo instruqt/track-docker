@@ -1,8 +1,8 @@
-template: containers
+template: virtualmachines
 configuration:
-  Containers:
-  - Image: docker:dind
-    Name: shell
-    Privileged: true
-    Resources:
-      Memory: 128
+  PoolSize: 0
+  VirtualMachines:
+    - Image: docker-17
+      MachineType: g1-small
+      Name: shell
+      Shell: /bin/bash

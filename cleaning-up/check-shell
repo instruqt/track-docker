@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 # Check that no containers are present
 CONTAINER_IDS=$(docker ps -aq)
 if [[ ! -z $CONTAINER_ID ]]; then

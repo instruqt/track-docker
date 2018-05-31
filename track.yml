@@ -1,3 +1,6 @@
+id: jzzz7q6roj
+type: track
+version: 0.0.0
 slug: docker-container-lifecycle
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/docker.png
 title: Docker - Container Lifecycle
@@ -21,15 +24,19 @@ tags:
 - docker
 - containers
 challenges:
-- slug: hello-world
+- id: x8ll2rygna
+  slug: hello-world
   credits: 10
   title: Hello world!
   teaser: Your first Docker container.
   notes:
   - type: text
-    contents: |-
-      As you know by now because you're smart and you paid attention, you can use the Docker CLI to start containers. There are a few ways that you can do this, but the one you are most likely to use is simply **docker run**.
+    title: ""
+    contents: As you know by now because you're smart and you paid attention, you
+      can use the Docker CLI to start containers. There are a few ways that you can
+      do this, but the one you are most likely to use is simply **docker run**.
   - type: text
+    title: ""
     contents: |-
       You may be wondering how it is possible to run a container that doesn't exist yet. Ofcourse we can start muttering about the birds and the bees, but since we're all grownups (or close enough) we guess we can just explain how containers recreate.
 
@@ -37,6 +44,7 @@ challenges:
 
       Ofcourse that still leaves the question open what you need to create a container. The answer is an **image**. We will leave the details for later, the only thing you really need to remember is that to run a container, you need an image.
   - type: text
+    title: ""
     contents: |-
       That's all the theory you need to do the challenge. If you think you've got this, or if you are the adventurous type, click the **Start challenge** button below.
 
@@ -53,20 +61,21 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks:
-  - getting-interactive
   tabs:
   - type: terminal
     title: Shell
     hostname: shell
-- slug: getting-interactive
+- id: am66nl37mx
+  slug: getting-interactive
   credits: 10
   title: Getting interactive
   teaser: Interacting with a container.
   notes:
   - type: text
-    contents: |-
-      If you've lazy like us, you used a plain **docker run** to complete the first assignment. However, there are multiple ways to run a container, and we're going to tell you about some of them now.
+    title: ""
+    contents: If you've lazy like us, you used a plain **docker run** to complete
+      the first assignment. However, there are multiple ways to run a container, and
+      we're going to tell you about some of them now.
   - type: text
     title: Run flags
     contents: |-
@@ -74,6 +83,7 @@ challenges:
 
       By itself, the interactive flag doesn't do much. This has to do with the fact that most command-line executables need something called a TTY to communicate with the outside world. Conveniently, Docker also has a flag for that: the TTY flag (**-t** or **-tty**).
   - type: text
+    title: ""
     contents: |-
       You've just learned about the interactive and the TTY flags. Let's learn us a mmnemonic!
 
@@ -90,23 +100,24 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks:
-  - moving-into-the-background
   tabs:
   - type: terminal
     title: Shell
     hostname: shell
-- slug: moving-into-the-background
+- id: z6qq89o46a
+  slug: moving-into-the-background
   credits: 10
   title: Moving into the background
   teaser: Let your containers roam freely.
   notes:
   - type: text
+    title: ""
     contents: |-
       So far you have only seen containers that wrote output to your shell. But it's entirely possible that someday you want to start a container and then go do something else.
 
       Docker has another flag for this: the detach flag (**-d** or **--detached**). It runs the container in the background and gives you back control over your shelackground and gives you back control over your shell.
   - type: text
+    title: ""
     contents: |-
       Remember that the interactive flag keeps your container alive in certain cases? This is one of those cases where you need it. If you use the detach flag by itself, the container will die immediately.
 
@@ -120,25 +131,27 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks:
-  - naming-containers
   tabs:
   - type: terminal
     title: Shell
     hostname: shell
-- slug: naming-containers
+- id: a344e6owez
+  slug: naming-containers
   credits: 10
   title: Naming your containers
   teaser: Give names to your favorite containers.
   notes:
   - type: text
+    title: ""
     contents: |-
       If you have used **docker ps**, you may have noticed that containers always have names even when you don't explicitly name them.
 
       This is because Docker will make up a name for each container if you don't specify one. It does this by randomly grabbing an adjective (e.g. 'lazy') from a pool and attaching a scientist's name to it. It's really cute.
   - type: text
-    contents: |-
-      Sometimes you want more control over your container names, for example if you are writing scripts. Docker lets you do this with the name flag (**--name**, no short version this time)
+    title: ""
+    contents: Sometimes you want more control over your container names, for example
+      if you are writing scripts. Docker lets you do this with the name flag (**--name**,
+      no short version this time)
   assignment: |-
     Run the Alpine image in detached mode and name it **oscar**.
 
@@ -151,25 +164,27 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks:
-  - killing-containers
   tabs:
   - type: terminal
     title: Shell
     hostname: shell
-- slug: killing-containers
+- id: xobb3dq7rz
+  slug: killing-containers
   credits: 10
   title: Killing containers
   teaser: Sometimes you got to let them go...
   notes:
   - type: text
+    title: ""
     contents: |-
       What if you want to get rid of those pesky detached containers? Docker has two ways to do this: **kill** and **stop**.
 
       Of these 2, **stop** is the more subtle one, but it doesn't make for a great headline, so we focus on **kill**. Just feed it a container name or id.
   - type: text
-    contents: |-
-      **docker stop** basically does the same thing, but uses a different signal (SIGTERM instead of SIGKILL). So depending on how your applications handles those signals, you may want to use or the other.
+    title: ""
+    contents: '**docker stop** basically does the same thing, but uses a different
+      signal (SIGTERM instead of SIGKILL). So depending on how your applications handles
+      those signals, you may want to use or the other.'
   assignment: |-
     Remember that we told you not to get too attached to Oscar? The reason for that is that you're going to have to kill it.
 
@@ -182,18 +197,18 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks:
-  - reviving-containers
   tabs:
   - type: terminal
     title: Shell
     hostname: shell
-- slug: reviving-containers
+- id: xv66nyewrz
+  slug: reviving-containers
   credits: 10
   title: Reviving containers
   teaser: Bring your containers back from the dead.
   notes:
   - type: text
+    title: ""
     contents: |-
       When your container has died for whatever reason (Somebody killed it? Why would anyone do that?) it is easy to bring it back to life with the **start** command.
 
@@ -206,18 +221,18 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks:
-  - cleaning-up
   tabs:
   - type: terminal
     title: Shell
     hostname: shell
-- slug: cleaning-up
+- id: xkpp35q78z
+  slug: cleaning-up
   credits: 10
   title: Cleaning up
   teaser: Party's over, let's clean up after ourselves
   notes:
   - type: text
+    title: ""
     contents: |-
       If a container has stopped, it will keep taking precious space on your Docker machine. It is however possible to remove it with the **rm** command.
 
@@ -230,12 +245,12 @@ challenges:
   difficulty: basic
   timelimit: 300
   points: 50
-  unlocks: []
   tabs:
   - type: terminal
     title: Shell
     hostname: shell
-published: true
 developers:
 - alindeboom@xebia.com
 - erik@instruqt.com
+- niels@instruqt.com
+published: true

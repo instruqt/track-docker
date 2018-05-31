@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 apk update && apk add jq
 for i in $(seq 1 30);
 do

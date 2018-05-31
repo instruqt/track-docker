@@ -1,4 +1,5 @@
-#!/bin/ash
+#!/bin/bash
+apt-get install -y jq
 docker pull alpine:latest
 
 exit 0

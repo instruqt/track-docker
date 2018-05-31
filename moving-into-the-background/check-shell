@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 # Check that an alpine container is currently running.
 CONTAINER_ID=$(docker ps -aq --filter ancestor=alpine --filter status=running)
 if [[ -z $CONTAINER_ID ]]; then

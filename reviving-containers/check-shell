@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 if [[ -z $(docker ps -aq --filter status=running --filter ancestor=alpine --filter name=oscar) ]]; then
   echo "DIAG: There is no Alpine container named 'oscar' with status 'running'"
   exit 1
